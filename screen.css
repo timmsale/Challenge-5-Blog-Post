@@ -1,54 +1,155 @@
 /* Add screen styles below */
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100..900&family=Red+Hat+Mono:ital,wght@0,300..700;1,300..700&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100..900&family=Merienda:wght@300..900&family=Red+Hat+Mono:ital,wght@0,300..700;1,300..700&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #353535;
-    color: #ffffff;
+    background-color: #FFF4EC;
+    color: black;
 }
 
-#hero {
-    background-color: #B5B5B5;
-    color: #353535;
-    margin: 0px;
-    padding-left: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 72px;
-}
-
-#intro{
-    margin: 0px;
-    width: 1010px;
-    text-align: center;
-    word-wrap: normal;
-    position: relative;
-    top: 50px;
-    left: 250px;
-    font-size: 72px;
-}
-
-.card{
+.navbar{
+    background-color: #B9CFD4;
     display: flex;
-    margin: 0px;
+    flex-direction: row;
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
-h2 {
-    font-size: 48px;
-    margin: 0px;
-    padding-top: 120px;
-    
+.navbar h1{
+    font-family: "Merienda";
+    font-size: 40px;
+    font-weight: 700;
+    text-align: left;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    margin: 0;
+    max-width: 50%;
+}
+
+
+.navbar ul{
+    list-style-type: none;
+    list-style-position: outside;
+    overflow: hidden;
+    font-family: "Hahmlet";
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    top: -65px;
+    right: 5%;
+}
+
+
+.navbar ul li{
+    float: left;
+    text-align: center;
+    font-size: 20;
+    display: inline;
+    line-height: 20px;
+    padding: 0 0 0 30px;
+    margin: 0px 25px;
+}
+
+.navbar ul li.home{
+    background: url('/icons/home.svg') no-repeat center left;
+    background-size: var(--icon-background-size);
+
+}
+
+.navbar ul li.search{
+    background: url('/icons/search.svg') no-repeat center left;
+    background-size: var(--icon-background-size);
+}
+
+
+.hero{
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+
+}
+
+.hero h2{
+    font-family: "Hahmlet";
+    font-size: 54px;
+    font-weight: 700;
+}
+
+.hero h3{
+    font-family: "Red Hat Mono", monospace;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.cow{
+    max-width: 100%;
+    height: auto;
 }
 
 p{
-    width: 650px;
+    font-family: "Hahmlet";
+    font-size: 20px;
+    width: 640px;
     text-align: left;
     word-wrap: normal;
-    margin: 0px;
-    padding-top: 35px;
-    font-size: 24px;
+    max-width: 50%;
+    margin: auto;
+    line-height: 170%;
+    size: 20;
 }
 
-img {
-    padding-right: 35px;
-    padding-left: 250px;
-    padding-top: 120px;
+.goat{
+    image-orientation: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+figcaption{
+    text-align: center;
+    font-family: "Red Hat Mono", monospace;
+    font-size: 16px;
+    font-weight: 500;
+    size: 16;
+}
+
+.socials{
+    background-color: #B9CFD4;
+    font-family: "Hahmlet";
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+}
+
+.socials ul{
+    list-style-type: none;
+    list-style-position: outside;
+}
+
+.socials ul li{
+    text-align: center;
+    font-size: 20;
+    display: inline;
+    line-height: 20px;
+    padding: 0 0 0 30px;
+    margin: 0px 25px;
+    position: relative;
+    right: -35%;
+}
+
+.socials ul li.twitter{
+    background: url('/icons/twitter.svg') no-repeat center left;
+    background-size: var(--icon-background-size);
+
+}
+
+.socials ul li.insta{
+    background: url('/icons/instagram.svg') no-repeat center left;
+    background-size: var(--icon-background-size);
 }
